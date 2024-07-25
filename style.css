@@ -440,11 +440,11 @@ span {
     margin: auto;
 }
 
-.testimonials {
+.partners {
     background: var(--second-bg-color);
 }
 
-.testimonials-box {
+.partners-box {
     background-size: cover;
     display: flex;
     align-items: center;
@@ -452,11 +452,11 @@ span {
     flex-direction: column;
 }
 
-.testimonials .heading {
+.partners .heading {
     margin-bottom: 5rem;
 }
 
-.testimonials-box img {
+.partners-box img {
     width: 15rem;
     border-radius: 50%;
     border: 3px solid var(--main-color);
@@ -465,11 +465,11 @@ span {
 
 .wrapper {  
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 3rem;
 }
 
-.testimonial-item {
+.partner-item {
     min-height: 550px;
     max-width: 450px;
     background: rgba(0, 0, 0, 0.7);
@@ -488,18 +488,24 @@ span {
     transition: 0.4s ease-in-out;
 }
 
-.testimonial-item:hover {
+.partner-item:hover {
     border: 3px solid var(--main-color);
     transform: translateY(-10px)scale(1.03);
     box-shadow: 0 0 50px var(--main-color);
 }
 
-.testimonial-item h2 {
+.partner-item h2 {
     font-size: 2.8rem;
 }
 
-.testimonial-item p {
+.partner-item p {
     font-size: 1.3rem;
+}
+
+.partner-item p a.hyperlinks {
+    text-decoration: underline;
+    color: var(--main-color);
+    font-size: 1.8rem;
 }
 
 #star {

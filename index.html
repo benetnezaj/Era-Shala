@@ -17,7 +17,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#education">Education</a>
             <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
+            <a href="#partners">Partners</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -26,19 +26,19 @@
         <div class="home-content">
             <h1>Hi, It's <span>Era</span></h1>
             <h3 class="text-animation">I'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint modi rem, vel voluptatem obcaecati eaque perferendis officiis ab sequi! Ratione iure ipsa sunt corrupti voluptas hic, laudantium doloremque libero beatae!</p>
+            <p>Welcome, my name is Era. ////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
 
             <div class="social-icons">
-                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="https://www.instagram.com/era_shala"><i class="bx bxl-instagram-alt"></i></a>
                 <a href="#"><i class="bx bxl-linkedin"></i></a>
                 <a href="#"><i class="bx bxl-github"></i></a>
                 <a href="#"><i class="bx bxl-twitter"></i></a>
             </div>
-
             <div class="btn-group">
                 <a href="#" class="btn">Hire</a>
                 <a href="#contact" class="btn">Contact</a>
             </div>
+
         </div>
         <div class="home-img">
             <img src="EraProfile.png" alt="Profile-pic">
@@ -128,14 +128,14 @@
         </div>
     </section>
 
-    <section class="testimonials" id="testimonials">
-        <div class="testimonials-box">
-            <h2 class="heading">Testimonials</h2>
+    <section class="partners" id="partners">
+        <div class="partners-box">
+            <h2 class="heading">Recent Customers</h2>
 
             <div class="wrapper">
-                <div class="testimonial-item">
-                    <img src="user1.png" alt="user1">
-                    <h2>Joe</h2>
+                <div class="partner-item">
+                    <img src="E-Sokoli.png" alt="E-Sokoli">
+                    <h2>E-Sokoli</h2>
                     <div class="rating">
                         <i class="bx bxs-star" id="star"></i>
                         <i class="bx bxs-star" id="star"></i>
@@ -143,12 +143,18 @@
                         <i class="bx bxs-star" id="star"></i>
                         <i class="bx bxs-star" id="star"></i>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid consequatur quam aliquam corporis? Distinctio inventore, voluptatum rem in corrupti, tempora iusto ducimus ex quos repellendus qui similique itaque dolorem dolore!</p>
+                    <br>
+                    <p>
+                        Recently, I've helped the construction company E-Soloki by being the voice actress for their latest commercial.
+                    </p>
+                    <p>
+                        You can find more about them on their official <a href="https://www.instagram.com/ez.sokoli" class="hyperlinks" >Instagram</a> page.
+                    </p>
                 </div>
 
-                <div class="testimonial-item">
-                    <img src="user2.png" alt="user2">
-                    <h2>John</h2>
+                <div class="partner-item">
+                    <img src="KolegjiAAB.png" alt="KolegjiAAB">
+                    <h2>Kolegji AAB</h2>
                     <div class="rating">
                         <i class="bx bxs-star" id="star"></i>
                         <i class="bx bxs-star" id="star"></i>
@@ -156,20 +162,12 @@
                         <i class="bx bxs-star" id="star"></i>
                         <i class="bx bxs-star" id="star"></i>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid consequatur quam aliquam corporis? Distinctio inventore, voluptatum rem in corrupti, tempora iusto ducimus ex quos repellendus qui similique itaque dolorem dolore!</p>
-                </div>
-
-                <div class="testimonial-item">
-                    <img src="user3.png" alt="user3">
-                    <h2>Marilyn</h2>
-                    <div class="rating">
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                    </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid consequatur quam aliquam corporis? Distinctio inventore, voluptatum rem in corrupti, tempora iusto ducimus ex quos repellendus qui similique itaque dolorem dolore!</p>
+                    <p>
+                        Recently, I've helped the AAB College by being part of their commercial for incoming students.
+                    </p>
+                    <p>
+                        You an find more about them on their official <a href="https://www.instagram.com/kolegji_aab" class="hyperlinks">Instagram</a> page or their official <a href="https://aab-edu.net" class="hyperlinks">Website</a>.
+                    </p>
                 </div>
             </div>
         </div>
@@ -178,20 +176,20 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="">
+        <form onsubmit="emailSender(event)">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="number" id="phoneNumber" placeholder="Phone Number" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
                 </div>
             </div>
-
+       
             <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message..." required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
@@ -207,19 +205,19 @@
 
         <ul class="list">
             <li>
-                <a href="#">FAQ</a>
+                <a href="#home">Scroll to top</a>
             </li>
             <li>
-                <a href="#">Services</a>
+                <a href="#education">Education</a>
             </li>
             <li>
-                <a href="#">About Me</a>
+                <a href="#services">Services</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#partners">Partners</a>
             </li>
             <li>
-                <a href="#">Testimonials</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
         <p class="copyright">
