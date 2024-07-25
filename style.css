@@ -347,7 +347,7 @@ span {
     padding: 30px 50px;
     border-radius: 4rem;
     box-shadow: 0 0 10px var(--main-color);
-    cursor: pointer;
+    cursor: default;
     transition: 0.3s ease-in-out;
 }
 
@@ -385,7 +385,7 @@ span {
 
 .services {
     background: var(--bg-color);
-    color: black;
+    color: white;
 }
 
 .services h2 {
@@ -401,19 +401,18 @@ span {
 }
 
 .service-box {
-    background-color: var(--main-color);
+    background-color: var(--bg-color);
     height: 300px;
-    border-radius: 3rem;
-    border: 5px solid transparent;
-    cursor: pointer;
+    border-radius: 4rem;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+    cursor: default;
     transition: 0.4s ease-in-out;
 }
 
 .service-box:hover {
-    background: white;
-    color: black;
-    border: 5px solid var(--main-color);
-    transform: scale(1.03);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
 }
 
 .service-box .service-info {
@@ -502,10 +501,10 @@ span {
     font-size: 1.3rem;
 }
 
-.partner-item p a.hyperlinks {
-    text-decoration: underline;
+.partner-item p.hyperlinks {
+    font-style: italic;
     color: var(--main-color);
-    font-size: 1.8rem;
+    font-size: 1.75rem;
 }
 
 #star {

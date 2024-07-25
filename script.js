@@ -3,6 +3,14 @@ let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
+function visitESokoli() {
+    window.location.href = 'https://www.e-sokoli.com/'
+}
+
+function visitAAB() {
+    window.location.href = 'https://aab-edu.net/'
+}
+
 function emailSender(event) {
     event.preventDefault();
 
