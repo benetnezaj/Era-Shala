@@ -47,7 +47,7 @@ window.onscroll = () => {
     });
 }
 
-menuIcon.onclick = () => {
+menuIcon.onmouseover = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
