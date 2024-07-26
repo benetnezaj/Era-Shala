@@ -71,6 +71,66 @@ body {
     border-bottom: 3px solid var(--main-color);
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.dropbtn i {
+    margin-left: 0.5rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    border-right: 2px solid var(--main-color);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: var(--main-color);
+    padding: 1px 10px;
+    margin: 1.5rem;
+    text-decoration: none;
+    display: block;
+    font-size: 1.6rem;
+    transition: 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--bg-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: var(--main-color);
+}
+
 #menu-icon {
     font-size: 3.6rem;
     color: var(--main-color);
@@ -201,7 +261,7 @@ span {
     box-shadow: 0 0 25px transparent;
 }
 
-.btn-group a:nth-of-type(2):hover {
+.btn-group a:nth-of-type(1):hover {
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
     color: black;
@@ -383,26 +443,26 @@ span {
     width: 50px;
 }
 
-.services {
+.experiences {
     background: var(--bg-color);
     color: white;
 }
 
-.services h2 {
+.experiences h2 {
     margin-bottom: 5rem;
     color: white;
 }
 
-.services-container {
+.experiences-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
 
-.service-box {
+.experience-box {
     background-color: var(--bg-color);
-    height: 300px;
+    height: 250px;
     border-radius: 4rem;
     border: 3px solid var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
@@ -410,12 +470,12 @@ span {
     transition: 0.4s ease-in-out;
 }
 
-.service-box:hover {
+.experience-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
 }
 
-.service-box .service-info {
+.experience-box .experience-info {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -425,13 +485,13 @@ span {
     padding: 5rem 5rem;
 }
 
-.service-info h4 {
+.experience-info h4 {
     font-size: 3rem;
     font-weight: 800;
     line-height: 2;
 }
 
-.service-info p {
+.experience-info p {
     font-size: 1.6rem;
     font-weight: 600;
     max-height: 100px;
@@ -624,7 +684,7 @@ span {
         font-size: 55%;
     }
 
-    .services-container {
+    .experiences-container {
         padding-bottom: 7rem;
         grid-template-columns: repeat(2, 1fr);
         margin: 0 5rem;
@@ -658,7 +718,7 @@ span {
         left: 0;
     }
 
-    .services {
+    .experiences {
         padding-bottom: 7rem;
     }
 
@@ -672,6 +732,15 @@ span {
 
     .footer {
         padding: 2rem 3%;
+    }
+
+    .dropdown-content {
+        min-width: 100px;
+    }
+
+    .dropbtn {
+        margin-left: 2rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -698,7 +767,8 @@ span {
         display: block;
     }
 
-    .navbar a {
+    .navbar a,
+    .dropdown {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
@@ -728,12 +798,21 @@ span {
         width: 56vw;
     }
 
-    .services h2 {
+    .experiences h2 {
         margin-bottom: 3rem;
     }
 
-    .services-container {
+    .experiences-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .dropdown-content {
+        min-width: 80px;
+    }
+
+    .dropbtn {
+        margin-left: 0;
+        font-size: 2rem;
     }
 }
 
