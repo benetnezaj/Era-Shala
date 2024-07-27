@@ -2,6 +2,8 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
+let dropBtn = document.querySelector('.dropbtn');
+let dropdownContent = document.querySelector('.dropdown-content');
 
 function visitESokoli() {
     window.location.href = 'https://www.e-sokoli.com/'
@@ -50,4 +52,17 @@ window.onscroll = () => {
 menuIcon.onmouseover = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
+}
+
+dropBtn.onclick = (i) => {
+    i.stopPropagation();
+    dropdownContent.classList.toggle('show');
+};
+
+window.onclick = (i) => {
+    if(!i.target.matches('.dropbtn')) {
+        if(dropdownContent.classList.contains('show')) {
+            dropdownContent.classList.remove('show');
+        }
+    }
 }
