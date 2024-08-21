@@ -307,7 +307,7 @@ span {
         content: "College Administrator";
     }
     41%, 60% {
-        content: "Fashion Designer";
+        content: "Voice Actress";
     }
     61%, 80% {
         content: "Social Media Manager";
@@ -403,7 +403,7 @@ span {
 .timeline-content {
     background-color: var(--bg-color);
     border: 3px solid var(--main-color);
-    padding: 30px 50px;
+    padding: 30px 30px;
     border-radius: 4rem;
     box-shadow: 0 0 10px var(--main-color);
     cursor: default;
@@ -691,6 +691,7 @@ span {
 }
 
 @media (max-width:991px) {
+
     header {
         padding: 2rem 3%;
     }
@@ -730,11 +731,15 @@ span {
     }
 
     .footer {
-        padding: 2rem 3%;
+        padding: 3rem 3%;
     }
 }
 
 @media (max-width:895px) {
+    body {
+        overflow-x: hidden;
+    }
+
     #menu-icon {
         display: block;
     }
@@ -802,10 +807,27 @@ span {
     }
 
     .experiences h2 {
-        margin-bottom: 3rem;
+        margin-bottom: 7rem;
+        font-size: 7rem;
     }
 
     .experiences-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .experience-box:nth-child(1) {
+        height: 275px;
+    }
+
+    .experience-box:nth-child(even) {
+        height: 300px;
+    }
+
+    .experience-box:nth-child(3) {
+        height: 400px;
+    }
+
+    .experience-box:nth-child(3) h4 {
+        font-size: 2.5rem;
     }
 }
